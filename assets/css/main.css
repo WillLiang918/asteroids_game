@@ -1,3 +1,12 @@
 /*.main-container {
   background-image: url('./../background.jpg')
 }*/
+.score {
+  font-size: 30px;
+  color: white;
+}
+
+canvas {
+  background: url('./../background.jpg');
+  opacity: 5;
+}
