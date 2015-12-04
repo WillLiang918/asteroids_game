@@ -12,6 +12,7 @@
     <script type="application/javascript" src="lib/movingObject.js"></script>
     <script type="application/javascript" src="lib/asteroid.js"></script>
     <script type="application/javascript" src="lib/ship.js"></script>
+    <script type="application/javascript" src="lib/explosion.js"></script>
     <script type="application/javascript" src="lib/bullet.js"></script>
     <script type="application/javascript" src="lib/game.js"></script>
     <script type="application/javascript" src="lib/gameView.js"></script>
@@ -20,6 +21,8 @@
     <script type="application/javascript">
       (function () {
         var canvasEl = document.getElementsByTagName("canvas")[0];
+        // canvasEl.width = document.body.clientWidth
+        // canvasEl.height = document.body.clientHeight
         canvasEl.width = Asteroids.Game.DIM_X;
         canvasEl.height = Asteroids.Game.DIM_Y;
 
