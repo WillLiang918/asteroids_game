@@ -29,16 +29,28 @@
         canvasEl.width = Asteroids.Game.DIM_X;
         canvasEl.height = Asteroids.Game.DIM_Y;
 
-        var ctx = canvasEl.getContext("2d");
-        var game = new Asteroids.Game();
-        var gameView = new Asteroids.GameView(game, ctx).start();
-        if (game.health <= 0) {
-          gameView.stop();
-        }
-
+        ctx = canvasEl.getContext("2d");
+        game = new Asteroids.Game();
+        gameView = new Asteroids.GameView(game, ctx);
+        gameView.start();
 
       })();
     </script>
 
+    <div id="game-over" class="">
+      <p>Game Over!</p>
+      <a href='#' class="new-game">Play Again?</a>
+      <script>
+          $(function() {
+            $(".new-game").click(function(evt) {
+               evt.preventDefault();
+               delete game;
+               delete gameView;
+               game = new Asteroids.Game();
+               gameView = new Asteroids.GameView(game, ctx).start();
+            })
+          })
+      </script>
+    </div>
   </body>
 </html>
