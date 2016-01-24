@@ -1,14 +1,10 @@
 # Kobayashi Maru (Asteroids)
 
-[Link to App][live]
+[Live][live]
 
 [live]: http://www.williamliang.tech/asteroids_game/
 
 A modern take on asteroids with upgrades, explosions, and custom AI ships.
-
-## Controls
-- Move with WAD or arrow keys
-- Press F or space to fire
 
 ## Features
 - Upgradable weapons, mobility and shield regeneration
