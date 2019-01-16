@@ -2,7 +2,7 @@
 
 [Live][live]
 
-[live]: http://www.williamliang.tech/asteroids_game/
+[live]: https://raw.githack.com/WillLiang918/asteroids_game/master/index.html
 
 A modern take on asteroids with upgrades, explosions, and custom AI ships.
 
